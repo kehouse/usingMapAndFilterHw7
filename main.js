@@ -5,7 +5,7 @@ var averagePrice;
   items.forEach(function(element){
     sum += element.price;
   });
-  averagePrice = (sum/items.length);
+  averagePrice = ((sum/items.length).toFixed(2));
   console.log(averagePrice);
 
 document.getElementById("answer1").innerHTML = "The average price for the all items is " + "$" + averagePrice;
